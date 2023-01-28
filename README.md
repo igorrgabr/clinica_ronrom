@@ -1,2 +1,2 @@
 # clinica_ronrom
-clinica veterinaria - projeto de POO
+sistema de uma clinica veterinaria elaborado para a disciplina de programação orientada a objetos (POO)
