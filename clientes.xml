@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCliente xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Cliente>
+    <Id>1</Id>
+    <IdUsuario>2</IdUsuario>
+    <Nome>Cibele Diniz</Nome>
+    <Endereco>Rua Porto</Endereco>
+    <Telefone>(84) 9 8434-8234</Telefone>
+    <CPF>093.854.233-79</CPF>
+  </Cliente>
+</ArrayOfCliente>

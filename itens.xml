@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfItemConsulta xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ItemConsulta>
+    <Id>1</Id>
+    <IdGato>1</IdGato>
+    <IdServico>1</IdServico>
+    <Valor>120</Valor>
+  </ItemConsulta>
+</ArrayOfItemConsulta>

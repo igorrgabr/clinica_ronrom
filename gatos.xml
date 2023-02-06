@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfGato xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Gato>
+    <Id>1</Id>
+    <IdCliente>2</IdCliente>
+    <Nome>Tontom</Nome>
+    <Cor>Frajola</Cor>
+    <Peso>4</Peso>
+    <Idade>1.6</Idade>
+  </Gato>
+  <Gato>
+    <Id>2</Id>
+    <IdCliente>2</IdCliente>
+    <Nome>Pepe</Nome>
+    <Cor>Encardido</Cor>
+    <Peso>5.35</Peso>
+    <Idade>1</Idade>
+  </Gato>
+</ArrayOfGato>

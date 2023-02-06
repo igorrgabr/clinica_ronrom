@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfConsulta xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Consulta>
+    <Id>1</Id>
+    <IdGato>1</IdGato>
+    <Total>120</Total>
+    <Status>Em aberto</Status>
+    <Data>2023-02-06T13:02:22.779403+00:00</Data>
+  </Consulta>
+</ArrayOfConsulta>

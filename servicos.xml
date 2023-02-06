@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfServico xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Servico>
+    <Id>1</Id>
+    <Nome>Vacina</Nome>
+    <Valor>120</Valor>
+    <Descricao>Vacina de raiva</Descricao>
+  </Servico>
+</ArrayOfServico>
