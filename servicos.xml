@@ -6,4 +6,22 @@
     <Valor>120</Valor>
     <Descricao>Vacina de raiva</Descricao>
   </Servico>
+  <Servico>
+    <Id>2</Id>
+    <Nome>Internação (diária)</Nome>
+    <Valor>30</Valor>
+    <Descricao>Diária de internação sem medicação</Descricao>
+  </Servico>
+  <Servico>
+    <Id>3</Id>
+    <Nome>Eutanásia</Nome>
+    <Valor>95</Valor>
+    <Descricao>Aplicação de eutanásia</Descricao>
+  </Servico>
+  <Servico>
+    <Id>4</Id>
+    <Nome>Castração</Nome>
+    <Valor>150</Valor>
+    <Descricao>Castração do gatinho</Descricao>
+  </Servico>
 </ArrayOfServico>

@@ -6,4 +6,10 @@
     <IdServico>1</IdServico>
     <Valor>120</Valor>
   </ItemConsulta>
+  <ItemConsulta>
+    <Id>2</Id>
+    <IdGato>1</IdGato>
+    <IdServico>4</IdServico>
+    <Valor>150</Valor>
+  </ItemConsulta>
 </ArrayOfItemConsulta>

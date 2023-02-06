@@ -8,4 +8,12 @@
     <Telefone>(84) 9 8434-8234</Telefone>
     <CPF>093.854.233-79</CPF>
   </Cliente>
+  <Cliente>
+    <Id>2</Id>
+    <IdUsuario>3</IdUsuario>
+    <Nome>Igor Gabriel</Nome>
+    <Endereco>Rua Alto</Endereco>
+    <Telefone>(84) 9 8324-1973</Telefone>
+    <CPF>194.235.112-96</CPF>
+  </Cliente>
 </ArrayOfCliente>
