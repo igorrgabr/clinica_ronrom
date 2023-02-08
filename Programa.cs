@@ -59,9 +59,10 @@ public class Clinica {
         case 04: DeletarServico(); break;
     
         case 05: ListarCadastro(); break;
+        case 06: DeletarCadastro(); break;
     
-        case 06: ListarConsulta(); break;
-        case 07: AtualizarConsulta(); break;
+        case 07: ListarConsulta(); break;
+        case 08: AtualizarConsulta(); break;
         }
       }
       catch (Exception error) {
@@ -118,10 +119,11 @@ public class Clinica {
     Console.WriteLine("3 - Atualizar");
     Console.WriteLine("4 - Deletar\n");
     Console.WriteLine("=(^-^)= Cadastros =(^-^)=\n");
-    Console.WriteLine("5 - Listar\n");
+    Console.WriteLine("5 - Listar");
+    Console.WriteLine("6 - Deletar\n");
     Console.WriteLine("=(^-^)= Consultas =(^-^)=\n");
-    Console.WriteLine("6 - Listar");
-    Console.WriteLine("7 - Atualizar\n");
+    Console.WriteLine("7 - Listar");
+    Console.WriteLine("8 - Atualizar\n");
     Console.WriteLine("99 - Logout\n");
     Console.WriteLine("=(^-^)=\n");
     Console.WriteLine("Opção: ");
@@ -232,6 +234,31 @@ public class Clinica {
     Console.WriteLine("= Gatos =\n");
     foreach (Gato obj in NGato.Listar())
       Console.WriteLine(obj);
+  }
+  public static void DeletarCadastro() {
+    Console.WriteLine("\n=(^-^)= Deletar cadastro =(^-^)=");
+    Console.WriteLine("");
+
+    foreach (Cliente obj in NCliente.Listar())
+      Console.WriteLine(obj);
+
+    Console.WriteLine("Informe os IDs de cliente e usuário para remover, um por linha:");
+    int idCl = int.Parse(Console.ReadLine());
+    int idUs = int.Parse(Console.ReadLine());
+
+    Cliente c = new Cliente();
+    Usuario u = new Usuario();
+    c.Id = idCl;
+    u.Id = idUs;
+
+    IEnumerable<Gato> ids = NGato.Listar().Where(g => g.IdCliente == idCl);
+    foreach (Gato obj in ids)
+      NGato.Deletar(obj);
+
+    NCliente.Deletar(c);
+    NUsuario.Deletar(u);
+
+    Console.WriteLine("Cadastro deletado com sucesso!\n");
   }
     
   public static void ListarConsulta() {

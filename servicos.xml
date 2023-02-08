@@ -24,4 +24,10 @@
     <Valor>150</Valor>
     <Descricao>Castração do gatinho</Descricao>
   </Servico>
+  <Servico>
+    <Id>5</Id>
+    <Nome>Hemotransfusão</Nome>
+    <Valor>100</Valor>
+    <Descricao>Transfusão de sangue</Descricao>
+  </Servico>
 </ArrayOfServico>

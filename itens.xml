@@ -12,4 +12,16 @@
     <IdServico>4</IdServico>
     <Valor>150</Valor>
   </ItemConsulta>
+  <ItemConsulta>
+    <Id>4</Id>
+    <IdGato>4</IdGato>
+    <IdServico>1</IdServico>
+    <Valor>120</Valor>
+  </ItemConsulta>
+  <ItemConsulta>
+    <Id>5</Id>
+    <IdGato>4</IdGato>
+    <IdServico>2</IdServico>
+    <Valor>30</Valor>
+  </ItemConsulta>
 </ArrayOfItemConsulta>
