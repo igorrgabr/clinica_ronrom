@@ -21,7 +21,7 @@ public class Clinica {
     Thread.CurrentThread.CurrentCulture = new CultureInfo("pt-BR", false);
     
     //InserirAdm();
-
+    Console.Clear();
     Console.WriteLine("Bem-vindo à Clínica Ronrom!\n");
     int opc = 0;
     do {
@@ -59,10 +59,9 @@ public class Clinica {
         case 04: DeletarServico(); break;
     
         case 05: ListarCadastro(); break;
-        case 06: DeletarCadastro(); break;
     
-        case 07: ListarConsulta(); break;
-        case 08: AtualizarConsulta(); break;
+        case 06: ListarConsulta(); break;
+        case 07: AtualizarConsulta(); break;
         }
       }
       catch (Exception error) {
@@ -102,6 +101,8 @@ public class Clinica {
   }
 
   public static int Menu() {
+    Console.Clear();
+    Console.WriteLine("");
     Console.WriteLine("=(^-^)= Página de Login =(^-^)=\n");
     Console.WriteLine("1 - Login");
     Console.WriteLine("2 - Cadastro\n");
@@ -112,6 +113,7 @@ public class Clinica {
   }
 
   public static int MenuAdmin() {
+    Console.WriteLine("");
     Console.WriteLine("= PAINEL ADMIN =\n");
     Console.WriteLine("=(^-^)= Serviços =(^-^)=\n");
     Console.WriteLine("1 - Inserir");
@@ -119,11 +121,10 @@ public class Clinica {
     Console.WriteLine("3 - Atualizar");
     Console.WriteLine("4 - Deletar\n");
     Console.WriteLine("=(^-^)= Cadastros =(^-^)=\n");
-    Console.WriteLine("5 - Listar");
-    Console.WriteLine("6 - Deletar\n");
+    Console.WriteLine("5 - Listar\n");
     Console.WriteLine("=(^-^)= Consultas =(^-^)=\n");
-    Console.WriteLine("7 - Listar");
-    Console.WriteLine("8 - Atualizar\n");
+    Console.WriteLine("6 - Listar");
+    Console.WriteLine("7 - Atualizar\n");
     Console.WriteLine("99 - Logout\n");
     Console.WriteLine("=(^-^)=\n");
     Console.WriteLine("Opção: ");
@@ -152,6 +153,7 @@ public class Clinica {
   }
 
   public static void InserirServico() {
+    Console.Clear();
     Console.WriteLine("\n=(^-^)= Novo serviço =(^-^)=");
     Console.WriteLine("");
 
@@ -172,6 +174,7 @@ public class Clinica {
     Console.WriteLine("Serviço adicionado com sucesso!");
   }
   public static void ListarServico() {
+    Console.Clear();
     Console.WriteLine("\n=(^-^)= Lista de serviços =(^-^)=");
     Console.WriteLine("");
 
@@ -179,6 +182,7 @@ public class Clinica {
       Console.WriteLine(obj);
   }
   public static void AtualizarServico() {
+    Console.Clear();
     Console.WriteLine("\n=(^-^)= Atualizar serviço =(^-^)=");
     Console.WriteLine("");
 
@@ -206,6 +210,7 @@ public class Clinica {
     Console.WriteLine("Serviço atualizado com sucesso!");
   }
   public static void DeletarServico() {
+    Console.Clear();
     Console.WriteLine("\n=(^-^)= Deletar serviço =(^-^)=");
     Console.WriteLine("");
 
@@ -224,6 +229,7 @@ public class Clinica {
   }
     
   public static void ListarCadastro() {
+    Console.Clear();
     Console.WriteLine("\n=(^-^)= Lista de cadastros =(^-^)=");
     Console.WriteLine("");
 
@@ -235,33 +241,9 @@ public class Clinica {
     foreach (Gato obj in NGato.Listar())
       Console.WriteLine(obj);
   }
-  public static void DeletarCadastro() {
-    Console.WriteLine("\n=(^-^)= Deletar cadastro =(^-^)=");
-    Console.WriteLine("");
-
-    foreach (Cliente obj in NCliente.Listar())
-      Console.WriteLine(obj);
-
-    Console.WriteLine("Informe os IDs de cliente e usuário para remover, um por linha:");
-    int idCl = int.Parse(Console.ReadLine());
-    int idUs = int.Parse(Console.ReadLine());
-
-    Cliente c = new Cliente();
-    Usuario u = new Usuario();
-    c.Id = idCl;
-    u.Id = idUs;
-
-    IEnumerable<Gato> ids = NGato.Listar().Where(g => g.IdCliente == idCl);
-    foreach (Gato obj in ids)
-      NGato.Deletar(obj);
-
-    NCliente.Deletar(c);
-    NUsuario.Deletar(u);
-
-    Console.WriteLine("Cadastro deletado com sucesso!\n");
-  }
     
   public static void ListarConsulta() {
+    Console.Clear();
     Console.WriteLine("\n=(^-^)= Lista de consultas =(^-^)=");
     Console.WriteLine("");
 
@@ -269,6 +251,7 @@ public class Clinica {
       Console.WriteLine(obj);
   }
   public static void AtualizarConsulta() {
+    Console.Clear();
     Console.WriteLine("\n=(^-^)= Atualizar consulta =(^-^)=");
     Console.WriteLine("");
 
@@ -284,7 +267,6 @@ public class Clinica {
     double valor = double.Parse(Console.ReadLine());
     Console.WriteLine("Informe o novo status:");
     string status = Console.ReadLine();
-    Console.WriteLine("Informe a nova data:");
     DateTime data = DateTime.Now;
 
     Consulta c = new Consulta();
@@ -300,6 +282,7 @@ public class Clinica {
   }
 
   public static void InserirGato() {
+    Console.Clear();
     Console.WriteLine("\n=(^-^)= Adicionar gato =(^-^)=");
     Console.WriteLine("");
 
@@ -324,6 +307,7 @@ public class Clinica {
     Console.WriteLine("Gato cadastrado com sucesso!");
   }
   public static void ListarGato() {
+    Console.Clear();
     Console.WriteLine("\n=(^-^)= Seus gatos =(^-^)=");
     Console.WriteLine("");
 
@@ -331,6 +315,7 @@ public class Clinica {
     foreach (Gato obj in ids) Console.WriteLine(obj);
   }
   public static void AtualizarGato() {
+    Console.Clear();
     Console.WriteLine("\n=(^-^)= Atualizar gato =(^-^)=");
     Console.WriteLine("");
 
@@ -362,6 +347,7 @@ public class Clinica {
     Console.WriteLine("Informações do gato atualizadas com sucesso!");
   }
   public static void DeletarGato() {
+    Console.Clear();
     Console.WriteLine("\n=(^-^)= Remover gato =(^-^)=");
     Console.WriteLine("");
 
@@ -380,6 +366,7 @@ public class Clinica {
   }
             
   public static void InserirItem() {
+    Console.Clear();
     Console.WriteLine("\n=(^-^)= Inserir item na consulta =(^-^)=");
     Console.WriteLine("");
     
@@ -405,13 +392,15 @@ public class Clinica {
     Console.WriteLine("Item adicionado com sucesso!");
   }
   public static void VerItens() {
+    Console.Clear();
     Console.WriteLine("\n=(^-^)= Lista de itens na consulta =(^-^)=");
     Console.WriteLine("");
-
+    
     IEnumerable<ItemConsulta> itemids = NItemConsulta.Listar().Where(i => NGato.Procurar(i.IdGato).IdCliente == cliente);
     foreach (ItemConsulta obj in itemids) Console.WriteLine(obj);
   }
   public static void DeletarItem() {
+    Console.Clear();
     Console.WriteLine("\n=(^-^)= Remover item da consulta =(^-^)=");
     Console.WriteLine("");
 
@@ -430,6 +419,7 @@ public class Clinica {
   }
   
   public static void SolicitarConsulta() {
+    Console.Clear();
     Console.WriteLine("\n=(^-^)= Agendar consulta =(^-^)=");
     Console.WriteLine("");
     Console.WriteLine("Confirmar solicitação? (s/n)");
@@ -454,6 +444,7 @@ public class Clinica {
     }
   }
   public static void VerConsultas() {
+    Console.Clear();
     Console.WriteLine("\n=(^-^)= Suas consultas =(^-^)=");
     Console.WriteLine("");
 
@@ -462,6 +453,7 @@ public class Clinica {
   }
 
   public static void AtualizarCadastro() {
+    Console.Clear();
     Console.WriteLine("\n=(^-^)= Atualizar dados =(^-^)=");
     Console.WriteLine("");
 
@@ -487,10 +479,12 @@ public class Clinica {
     Console.WriteLine("Informações atualizadas com sucesso!");
   }
   public static void VerDados() {
+    Console.Clear();
     Console.WriteLine("\n" + NCliente.Procurar(cliente));
   }
   
   public static bool Login() {
+    Console.Clear();
     Console.WriteLine("Usuário:");
     string nome = Console.ReadLine();
     Console.WriteLine("Senha:");
@@ -506,6 +500,7 @@ public class Clinica {
     return false;
   }
   public static void Cadastro() {
+    Console.Clear();
     Console.WriteLine("Usuário:");
     string nome = Console.ReadLine();
     Console.WriteLine("Senha:");
@@ -517,6 +512,7 @@ public class Clinica {
     u.Admin = false;
     int idUsuario = NUsuario.Criar(u);
 
+    Console.Clear();
     Console.WriteLine("=(^-^)= Dados pessoais =(^-^)=");
     Console.WriteLine("Nome completo:");
     string nomeCompl = Console.ReadLine();

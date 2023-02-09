@@ -3,15 +3,8 @@
   <Consulta>
     <Id>1</Id>
     <IdGato>1</IdGato>
-    <Total>120</Total>
+    <Total>180</Total>
     <Status>Fechado</Status>
-    <Data>2023-02-06T15:51:07.283538+00:00</Data>
-  </Consulta>
-  <Consulta>
-    <Id>2</Id>
-    <IdGato>1</IdGato>
-    <Total>270</Total>
-    <Status>Em aberto</Status>
-    <Data>2023-02-06T17:17:42.298403+00:00</Data>
+    <Data>2023-02-09T14:43:39.955733+00:00</Data>
   </Consulta>
 </ArrayOfConsulta>

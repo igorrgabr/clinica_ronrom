@@ -2,32 +2,14 @@
 <ArrayOfServico xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Servico>
     <Id>1</Id>
-    <Nome>Vacina</Nome>
-    <Valor>120</Valor>
-    <Descricao>Vacina de raiva</Descricao>
+    <Nome>Castração</Nome>
+    <Valor>150</Valor>
+    <Descricao>Castração do gato</Descricao>
   </Servico>
   <Servico>
     <Id>2</Id>
     <Nome>Internação (diária)</Nome>
-    <Valor>30</Valor>
-    <Descricao>Diária de internação sem medicação</Descricao>
-  </Servico>
-  <Servico>
-    <Id>3</Id>
-    <Nome>Eutanásia</Nome>
-    <Valor>95</Valor>
-    <Descricao>Aplicação de eutanásia</Descricao>
-  </Servico>
-  <Servico>
-    <Id>4</Id>
-    <Nome>Castração</Nome>
-    <Valor>150</Valor>
-    <Descricao>Castração do gatinho</Descricao>
-  </Servico>
-  <Servico>
-    <Id>5</Id>
-    <Nome>Hemotransfusão</Nome>
-    <Valor>100</Valor>
-    <Descricao>Transfusão de sangue</Descricao>
+    <Valor>50</Valor>
+    <Descricao>Internação por dia (sem medicamentos)</Descricao>
   </Servico>
 </ArrayOfServico>

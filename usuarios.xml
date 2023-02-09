@@ -12,10 +12,4 @@
     <Senha>cibele</Senha>
     <Admin>false</Admin>
   </Usuario>
-  <Usuario>
-    <Id>3</Id>
-    <Nome>igor</Nome>
-    <Senha>igor123</Senha>
-    <Admin>false</Admin>
-  </Usuario>
 </ArrayOfUsuario>

@@ -5,15 +5,15 @@
     <IdCliente>1</IdCliente>
     <Nome>Tontom</Nome>
     <Cor>Frajola</Cor>
-    <Peso>4</Peso>
-    <Idade>1.6</Idade>
+    <Peso>5.6</Peso>
+    <Idade>1.8</Idade>
   </Gato>
   <Gato>
     <Id>2</Id>
     <IdCliente>1</IdCliente>
     <Nome>Pepe</Nome>
     <Cor>Encardido</Cor>
-    <Peso>5.35</Peso>
-    <Idade>1</Idade>
+    <Peso>4.5</Peso>
+    <Idade>1.5</Idade>
   </Gato>
 </ArrayOfGato>
